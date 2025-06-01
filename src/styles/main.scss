@@ -1,0 +1,36 @@
+@use 'hero';
+@use 'components/buttons';
+@use 'events';
+@use 'variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+    color: variables.$textColor;
+    list-style: none;
+}
+
+body {
+    background: linear-gradient(
+    135deg,
+    #021b01 0%,
+    #001b00 50%,
+    #042e04 100%
+);
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media (max-width: 640px) {
+        max-width: 80%;
+    }
+
+    @media (max-width: 1024px) {
+        max-width: 90%;
+    }
+}
