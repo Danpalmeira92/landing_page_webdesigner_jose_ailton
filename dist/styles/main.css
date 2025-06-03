@@ -120,6 +120,7 @@
 
 .event__details__title__destaque {
   color: #adff2f;
+  font-weight: bold;
 }
 
 .event__details__description {
@@ -174,6 +175,41 @@
   padding: 6px 8px;
   font-size: 24px;
   box-shadow: 0 4px 6px #0009, inset 0 1px 1px #ffffff1a;
+}
+
+.event__mistery_box {
+  text-align: justify;
+  background-image: url("../caixa_segredo.8677c7f8.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  position: relative;
+}
+
+.event__mistery_box h6 {
+  color: #d6d6d6d7;
+  width: 50%;
+}
+
+@media (width <= 640px) {
+  .event__mistery_box {
+    background-position: center;
+    min-height: auto;
+    padding: 140px 16px;
+  }
+
+  .event__mistery_box .event__details {
+    text-align: justify;
+  }
+
+  .event__mistery_box h6 {
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .event__mistery_box .event__details__title {
+    font-size: 24px;
+  }
 }
 
 * {
