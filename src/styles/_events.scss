@@ -2,37 +2,61 @@
 
 .event {
     padding: 80px 0;
-
     
-
-
-    &--image-left {
-        .container {
-            flex-direction: row-reverse;
-        }
-    }
-
-
+    
     .container {
         display: flex;
         gap: 40px;
     }
-
+    
     &__image {
-        max-width: 360px;
+        max-width: 500px;
     }
-
+    
     &__details {
-
+        
         &__title {
-            font-size: 18px;
-            font-weight: bold;
+            font-size: 32px;
+            font-weight: lighter;
             margin-bottom: 16px;
+            margin-left: 8px;
+            
+            &__destaque {
+                color: greenyellow;
+            }
+        }
+        
+        &__description {
+            line-height: 22px;
+            
+        }
+        
+        &__h6 {
+            font-size: 14px;
+            font-weight: lighter;
         }
 
-        &__descriptions {
-            line-height: 22px;
+        &__list {
+            padding: 20px;
+            margin-top: 32px;
+            background: #fff transparent ;
+            border-radius: 16px;
+            border: solid 0.5px rgba(57, 57, 57, 0.6);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6),
+            inset 0 1px 1px rgba(255, 255, 255, 0.1);
+            transition: transform 0.2 ease, box-shadow 0.2 ease;
+            
+            &__item {
+                padding-bottom: 20px;
+
+                &__description {
+                    font-size: 13px;
+                    padding-bottom: 10px;
+                }
+            }
+
         }
+
     }
 
     @media (max-width: 640px) {
@@ -48,5 +72,17 @@
             margin-right: 0;
             margin-bottom: 16px;
         }
+    }
+
+    .icon-custom {
+        color: limegreen;
+        background: #ffffff04;
+        border-radius: 8px;
+        padding: 6px 8px;
+        margin-right: 8px;
+        font-size: 24px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6),
+            inset 0 1px 1px rgba(255, 255, 255, 0.1);
+            transition: transform 0.2 ease, box-shadow 0.2 ease;
     }
 }
