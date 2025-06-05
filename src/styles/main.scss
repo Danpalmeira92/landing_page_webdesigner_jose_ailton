@@ -13,6 +13,7 @@
 }
 
 body {
+
     background: linear-gradient(
     135deg,
     #021b01 0%,
@@ -26,11 +27,14 @@ body {
     width: 100%;
     margin: 0 auto;
 
+
     @media (max-width: 640px) {
-        max-width: 80%;
+        padding-left: 16px;
+        padding-right: 16px;
     }
 
     @media (max-width: 1024px) {
-        max-width: 90%;
+        padding-left: 24px;
+        padding-right: 24px;
     }
 }
